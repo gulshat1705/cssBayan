@@ -39,17 +39,13 @@ a,
 ul li {
     list-style: none;
 }
-
 .accordion__content{
     margin: 0;
     padding: 1.5rem;
 }
-
 .accordion__item {
     margin-bottom: 1.5rem;
-
 }
-
 .accordion__button{
     padding: 15px 20px;
     color: #ffffff;
@@ -59,15 +55,19 @@ ul li {
     align-items: center;
     cursor: pointer;
 }
+.accordion__button i{
+    display: none;
+}
+.accordion__content:hover i{
+    display: block;
+}
 .accordion__button:hover{
     color: #cecece;
-}
-.accordion__button:active{
-    color: #daa520;
 }
 .accordion__input:checked + .accordion__block i {
     transform: rotate(135deg);
     transition: all 0.3s ease;
+    color: #daa520;
 }
 .accordion__input:hover + .accordion__block i {
     opacity: 1;
@@ -83,11 +83,17 @@ ul li {
     padding: 0;
     border: 0;
 }
+.accordion__input:hover + .accordion__block > img,
 .accordion__input:checked + .accordion__block > img {
     display: block;
-    max-height: 32.75rem;
-    margin: 0 auto;
+    max-height: 25.75rem;
+    margin: 5px auto;
+    border-radius: 0.5rem;
     transition: all 0.8s ease;
+    border: 1px solid #daa520;
+}
+.accordion__input:checked + .accordion__block .accordion__button > p{
+    color: #daa520;
 }
 
 
