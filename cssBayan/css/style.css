@@ -1,0 +1,69 @@
+html {
+    font-size: 10px;
+}
+
+body{
+    font-size: 2.2rem;
+    min-height: 100vh;
+    font-family: 'Poppins', Verdana, sans-serif;
+}
+
+.wrapper {
+    max-width: 920px;
+    margin: auto;
+}
+
+.header {
+    padding: 15px 0;
+    border-bottom: 1px solid #008080;
+}
+.logo{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.3rem;
+    margin: 0;
+}
+
+.link_text{
+    cursor: pointer;
+    color: #000000;
+}
+.link_text:hover{
+    color: #daa520;
+}
+.main {
+    padding: 15px;
+    background: #cececed3;
+    
+}
+.accordion{
+    border-top: 1px solid #008080;
+    padding: 10px 0;
+}
+.footer{
+    padding: 15px 0;
+    border-top: 1px solid teal;
+    width: 100%;
+}
+.footeer-block{
+    display: flex;
+    justify-content: space-between;
+}
+.rs_link{
+    display: block;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ffffff;
+    background: url(../images/rs_school_js.svg) 0 0 no-repeat;
+}
+.github_link{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    background: url(../images/github.svg) 0 0 no-repeat;
+}
+.footer__link {
+    display: block;
+}
+.fa-brands.fa-github{
+    color: #000000;
+}
