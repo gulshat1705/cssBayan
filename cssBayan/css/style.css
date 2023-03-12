@@ -93,6 +93,14 @@ body{
 .accordion__item{
     cursor: pointer;
 }
+.accordion__block img {
+    padding: 40px;
+    margin: 0;
+    cursor: pointer;
+}
+.accordion__block{
+    cursor: pointer;
+}
 .footer{
     padding: 1.5rem 0;
     border-top: 0.1rem solid teal;
@@ -110,7 +118,6 @@ body{
 .link_text:hover{
     color: #daa520;
 }
-
 .rs_link{
     display: block;
     width: 100px;
