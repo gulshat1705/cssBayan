@@ -1,5 +1,5 @@
 body{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     min-height: 100vh;
     font-size: inherit;
     line-height: 1.4;
@@ -37,14 +37,15 @@ body{
     padding: 0.2rem 0;
 }
 .accordion__button{
-    padding: 0.3rem 1.5rem;
+    padding: 0.01rem 1.5rem;
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     background: #008080;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    font-weight: 700;
 }
 .accordion__button i{
     display: none;
@@ -53,7 +54,9 @@ body{
     display: block;
     cursor: pointer;
 }
-.accordion__button:hover{
+.accordion__button:hover,
+.accordion__item:hover p,
+.accordion__item:hover i{
     color: #cecece;
 }
 .accordion__input:checked + .accordion__block i {
@@ -75,16 +78,15 @@ body{
     padding: 0;
     border: 0;
 }
-.accordion__input:hover + .accordion__block > img,
+.accordion__item:hover .accordion__block > img,
 .accordion__input:checked + .accordion__block > img {
     display: block;
-    max-height: 25.75rem;
+    max-height: 20.75rem;
     margin: 0.5rem auto;
     border-radius: 0.5rem;
-    transition: all 0.8s ease;
-    cursor: pointer;
+    transition: all 0.8s ease-in;    
 }
-.accordion__input:checked + .accordion__block > img {
+.accordion__input:checked + .accordion__block > img{
     border: 0.5rem solid #daa520;
 }
 .accordion__input:checked + .accordion__block .accordion__button > p{
@@ -94,7 +96,6 @@ body{
     cursor: pointer;
 }
 .accordion__block img {
-    padding: 40px;
     margin: 0;
     cursor: pointer;
 }
@@ -138,14 +139,13 @@ body{
     color: #000000;
 }
 
-
 @media screen and (max-width: 1000px) {
     .wrapper{
-        max-width: 110vh;
+        max-width: 200vh;
         align-items: center;
     }
     .accordion__block img{
-        max-width: 50vh;
+        max-width: 100vh;
         max-height: 15vh;
     }
     .accordion__block p{
@@ -155,7 +155,7 @@ body{
 
 @media screen and (max-width: 640px) {
     .wrapper{
-        max-width: 80vh;
+        max-width: 100vh;
         align-items: center;
     }
     .accordion__block img{
@@ -173,11 +173,11 @@ body{
         align-items: center;
     }
     .accordion__block img{
-        max-width: 30vh;
+        max-width: 20vh;
         max-height: 5vh;
     }
     .accordion__block p{
-        font-size: 1.0rem;
+        font-size: 0.9rem;
     }
 
 }
