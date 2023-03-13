@@ -1,0 +1,183 @@
+body{
+    font-size: 1.8rem;
+    min-height: 100vh;
+    font-size: inherit;
+    line-height: 1.4;
+    font-family: 'Poppins', Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper {
+    max-width: 57rem;
+    margin: 0 auto;
+}
+.header {
+    padding: 0.1rem 0;
+    border-bottom: 0.1rem solid #008080;    
+    max-width: 100%;
+    min-width: 100%;
+}
+.logo{
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin: 0;
+}
+.logo:hover{
+    color: #daa520;
+    transition: all 0.5s;    
+}
+.main {
+    max-width: 100%;
+    min-width: 100%;
+}
+.accordion__content{
+    margin: 0;
+    padding: 0.2rem 0;
+}
+.accordion__button{
+    padding: 0.01rem 1.5rem;
+    color: #ffffff;
+    font-size: 1.6rem;
+    background: #008080;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+}
+.accordion__button i{
+    display: none;
+}
+.accordion__content:hover i{
+    display: block;
+    cursor: pointer;
+}
+.accordion__button:hover,
+.accordion__item:hover p,
+.accordion__item:hover i{
+    color: #cecece;
+}
+.accordion__input:checked + .accordion__block i {
+    transform: rotate(135deg);
+    transition: all 0.3s ease;
+    color: #daa520;
+}
+.accordion__input:hover + .accordion__block i {
+    opacity: 1;
+    transform: rotate(135deg);
+    transition: all 0.3s ease;
+}
+.accordion__item:hover .accordion__block i {
+    opacity: 1;
+}
+.accordion__input + .accordion__block > img{
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.accordion__item:hover .accordion__block > img,
+.accordion__input:checked + .accordion__block > img {
+    display: block;
+    max-height: 20.75rem;
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
+    transition: all 0.8s ease-in;    
+}
+.accordion__input:checked + .accordion__block > img{
+    border: 0.5rem solid #daa520;
+}
+.accordion__input:checked + .accordion__block .accordion__button > p{
+    color: #daa520;
+}
+.accordion__item{
+    cursor: pointer;
+}
+.accordion__block img {
+    margin: 0;
+    cursor: pointer;
+}
+.accordion__block{
+    cursor: pointer;
+}
+.footer{
+    padding: 1.5rem 0;
+    border-top: 0.1rem solid teal;
+    width: 100%;
+    margin-top: auto;
+}
+.footeer-block{
+    display: flex;
+    justify-content: space-between;
+}
+.link_text{
+    cursor: pointer;
+    color: #000000;
+}
+.link_text:hover{
+    color: #daa520;
+}
+.rs_link{
+    display: block;
+    width: 10.0rem;
+    height: 2.0rem;
+    border: 0.1rem solid #ffffff;
+    background: url(../images/rs_school_js.svg) 0 0 no-repeat;
+}
+.github_link{
+    display: inline-block;
+    width: 10rem;
+    height: 2.0rem;
+    background: url(../images/github.svg) 0 0 no-repeat;
+}
+.footer__link {
+    display: block;
+}
+.fa-brands.fa-github{
+    color: #000000;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper{
+        max-width: 200vh;
+        align-items: center;
+    }
+    .accordion__block img{
+        max-width: 100vh;
+        max-height: 15vh;
+    }
+    .accordion__block p{
+        font-size: 1.3rem;
+    }
+}   
+
+@media screen and (max-width: 640px) {
+    .wrapper{
+        max-width: 100vh;
+        align-items: center;
+    }
+    .accordion__block img{
+        max-width: 40vh;
+        max-height: 10vh;
+    }
+    .accordion__block p{
+        font-size: 1.1rem;
+    }
+} 
+
+@media screen and (max-width: 320px) {
+    .wrapper{
+        max-width: 30vh;
+        align-items: center;
+    }
+    .accordion__block img{
+        max-width: 20vh;
+        max-height: 5vh;
+    }
+    .accordion__block p{
+        font-size: 0.9rem;
+    }
+
+}
